@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function fetchSongs() {
-    fetch("https://api.github.com/repos/ai-fanatic/DivineRadio/contents/Audio")
+    fetch("https://api.github.com/repos/ai-fanatic/RamaRaga/contents/Audio")
       .then((response) => response.json())
       .then((data) => {
         const mp3Files = data.filter((file) => file.name.endsWith(".mp3"));
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       songDiv.onclick = () => {
         playSong(song.download_url);
         // Construct the correct PDF URL
-        const pdfUrl = `https://raw.githubusercontent.com/ai-fanatic/DivineRadio/main/PDF/${song.name.replace(
+        const pdfUrl = `https://raw.githubusercontent.com/ai-fanatic/RamaRaga/main/PDF/${song.name.replace(
           ".mp3",
           ".pdf"
         )}`;
