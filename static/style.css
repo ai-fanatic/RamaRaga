@@ -1,0 +1,321 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+}
+
+#search-bar {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#song-list {
+  margin: auto;
+  width: 80%;
+  list-style: none;
+  padding: 0;
+}
+
+#song-list div {
+  background-color: #d35b5b;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#song-list div:hover {
+  background-color: #e9a5a5;
+}
+
+audio {
+  width: 80%;
+  margin-top: 20px;
+}
+
+/* ... existing styles ... */
+
+/* Theme toggle button */
+#theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+}
+
+/* Night mode styles */
+body.night-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+body.night-mode #search-bar,
+body.night-mode #song-list div {
+  background-color: #555;
+  color: #fff;
+  border-color: #777;
+}
+
+body.night-mode #theme-toggle {
+  background-color: #555;
+  color: #fff;
+}
+
+/* ... existing styles ... */
+
+nav ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #333;
+  padding-top: 5px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+/* ... existing styles ... */
+
+#logo-container {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+#logo {
+  height: 45px; /* Adjust size as needed */
+  width: auto;
+}
+
+#title-link {
+  text-decoration: none; /* Removes underline from the link */
+}
+
+#page-title {
+  font-weight: bold;
+  color: rgb(59, 59, 11);
+  text-align: center;
+  font-family: "Playfair Display", calibri; /* Example of a royal-looking font */
+  /* Additional styling */
+}
+
+/* For example, add Google Font in your CSS */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+
+.background-image {
+  position: fixed; /* or absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/static/background.png");
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1; /* Ensure it stays behind the content */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Above the background */
+  /* Other styling for your content */
+}
+
+/* Container for the iframe */
+.iframe-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Adjust the height as needed */
+  width: 100vw;
+  margin: 40px 0; /* Space above and below the container */
+}
+
+/* Styling the iframe */
+#iframe {
+  width: 80%; /* Adjust width as a percentage of the container's width */
+  height: 60%; /* Adjust height as needed */
+  border: none; /* Optional: remove border */
+  display: block;
+}
+
+.social-media-links {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.social-media-links a {
+  margin: 0 10px;
+  color: #333; /* Change as needed */
+  text-decoration: none;
+  font-size: 20px; /* Change as needed */
+}
+
+.social-media-links a:hover {
+  color: #007bff; /* Change as needed */
+}
+
+.content-wrapper {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 100px; /* Height of the footer */
+}
+
+.footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  height: 100px; /* Set the footer height */
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  color: #333;
+}
+
+/* ... rest of your styles ... */
+
+.footer .social-media-links a {
+  margin: 0 10px;
+  color: #333; /* Change as needed */
+  text-decoration: none;
+  font-size: 20px; /* Change as needed */
+}
+
+.footer .social-media-links a:hover {
+  color: #007bff; /* Change as needed */
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1; /* Makes the main content grow to fill the space, pushing the footer to the bottom */
+}
+
+.form-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: auto; /* Adjust the height as needed */
+  padding: 20px; /* Adds some space around the form */
+}
+
+.form-container iframe {
+  border: none; /* Optional: Removes the border around the iframe */
+}
+.content-container {
+  background-color: #66bd1f; /* White background */
+  padding: 20px; /* Add some space inside the container */
+  margin: 20px; /* Add some space outside the container */
+  border-radius: 5px; /* Optional: rounded corners */
+  /* Add any additional styling as needed */
+}
+
+.acknowledgements-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Spacing between bubbles */
+  padding: 20px;
+}
+
+.suggestion-bubble {
+  background-color: #f0f0f0; /* Light background for the bubble */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  padding: 15px;
+  max-width: 300px; /* Maximum width of a bubble */
+  margin: 10px;
+}
+
+.suggestion-bubble h2 {
+  margin-top: 0;
+}
+
+.suggestion-bubble p {
+  margin-bottom: 0;
+}
+
+body.night-mode {
+  background-color: #333;
+  color: #fff;
+  /* ... other night mode styles ... */
+}
+
+body.night-mode #page-title {
+  color: #fff; /* or any color suitable for night mode */
+}
+
+.contact-container {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+  text-align: center;
+  color: #333;
+}
+
+.contact-description,
+.contact-info,
+.contact-footer {
+  text-align: center;
+  color: #666;
+  margin: 10px 0;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.social-link {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #007bff;
+}
+
+.social-link i {
+  margin-right: 5px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YNSNC9970B"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-YNSNC9970B");
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📻Divine Radio</title>
+    <link rel="stylesheet" href="static/style.css" />
+    <link rel="icon" type="image/x-icon" href="static/favicon.png" />
+  </head>
+  <body>
+    <a href="/" id="title-link">
+      <h1 id="page-title">Divine Radio</h1>
+    </a>
+    <a href="/" id="logo-container">
+      <img src="static/logo.png" alt="Logo" id="logo" />
+    </a>
+    <nav>
+      <ul id="navbar">
+        <li><a href="index.html">🏡Home</a></li>
+        <li><a href="about.html">🌤️About</a></li>
+        <li><a href="privacy.html">🔐Privacy</a></li>
+        <li><a href="contact.html">📲Contact Us</a></li>
+        <li><a href="feedback.html">🧑🏼‍🍼Feedback</a></li>
+        <li>
+          <a href="acknowledgements.html">🙏🏼Acknowledgements</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="theme-toggle" onclick="toggleTheme()">
+      <span id="theme-icon">🌞</span>
+    </div>
+    <div class="background-image"></div>
+    <main>
+        <h1>Acknowledgements</h1>
+        <div class="acknowledgements-container">
+            <!-- Example User Suggestion -->
+            <div class="suggestion-bubble">
+                <h2>Hanumasri Gorugantu (Aunt)</h2>
+                <p>Thanks for suggesting me to add the PDF to read the lyrics for easy chanting</p>
+            </div>            
+            <div class="suggestion-bubble">
+              <h2>Neelima Pinnamraju (Sister)</h2>
+              <p>Thanks for suggesting me to add Shiva songs</p>
+            </div>
+            <div class="suggestion-bubble">
+              <h2>Swetha Gorugantu (Wife)</h2>
+              <p>Thanks for suggesting me to add the search by devotional song</p>
+            </div>
+            <div class="suggestion-bubble">
+              <h2>Uday Devarakonda (Friend)</h2>
+              <p>Thanks for suggesting me to fix the UI Error</p>
+            </div>
+            
+            <!-- Repeat above block for each user and suggestion -->
+        </div>
+    </main>
+
+      <!-- Adjust size as needed -->
+    </div>
+    <script src="static/script.js"></script>
+  </body>
+</html>
