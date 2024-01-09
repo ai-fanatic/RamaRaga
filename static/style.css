@@ -319,3 +319,7 @@ body.night-mode #page-title {
 .social-link i {
   margin-right: 5px;
 }
+
+#pdfViewer {
+  display: none;
+}
