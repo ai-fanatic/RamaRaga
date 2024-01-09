@@ -1,8 +1,8 @@
-# Divine Radio 📻
+# Rama Raga 📻
 
 ## About 🌟
 
-Divine Radio is a web-based streaming platform dedicated to Hindu Devotional Music 🎶. It offers a seamless and enjoyable music experience, providing users with easy access to a wide range of devotional songs and related content.
+Rama Raga is a web-based streaming platform dedicated to Hindu Devotional Music 🎶. It offers a seamless and enjoyable music experience, providing users with easy access to a wide range of devotional songs and related content.
 
 ## Features 🚀
 
@@ -36,11 +36,11 @@ To run this project locally, follow these steps:
 
 ## Usage 🖥️
 
-Once the application is running, navigate to `http://localhost:5000` in your web browser to access Divine Radio.
+Once the application is running, navigate to `http://localhost:5000` in your web browser to access Rama Raga.
 
 ## Contributing 🤝
 
-Contributions to Divine Radio are welcome! Please read our contributing guidelines for instructions on how to make a contribution.
+Contributions to Rama Raga are welcome! Please read our contributing guidelines for instructions on how to make a contribution.
 
 ## License 📜
 
