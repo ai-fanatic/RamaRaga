@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const searchBar = document.getElementById("search-bar");
   const songList = document.getElementById("song-list");
   const audioPlayer = document.getElementById("audio-player");
-  const pdfViewer = document.getElementById("pdf-viewer"); // Assuming you have an iframe with this ID
+  //const pdfViewer = document.getElementById("pdf-viewer"); // Assuming you have an iframe with this ID
 
   // Fetch and display songs
   // Fetch and display songs on page load
@@ -42,22 +42,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  function formatSongName(songName) {
-    let formattedName = songName.replace(".mp3", "");
-    const dashIndex = formattedName.indexOf("-");
-    if (dashIndex !== -1) {
-      formattedName = formattedName.substring(dashIndex + 1).trim();
-    }
-    return formattedName;
-  }
-
-  function showPDF(pdfUrl) {
-    const viewerUrl = `https://docs.google.com/gview?url=${encodeURIComponent(
-      pdfUrl
-    )}&embedded=true`;
-    pdfViewer.src = viewerUrl;
+  // function formatSongName(songName) {
+  //   let formattedName = songName.replace(".mp3", "");
+  //   const dashIndex = formattedName.indexOf("-");
+  //   if (dashIndex !== -1) {
+  //     formattedName = formattedName.substring(dashIndex + 1).trim();
+  //   }
+  //   return formattedName;
+  // }
+  function loadPDF() {
+    const pdfUrl =
+      "https://raw.githubusercontent.com/ai-fanatic/RamaRaga/main/PDF/Ramayan-YuddhaKanda59Sarga.pdf"; // Replace with your PDF URL
+    const pdfViewer = document.getElementById("pdf-viewer");
+    pdfViewer.src = pdfUrl;
     pdfViewer.style.display = "block";
   }
+  // function showPDF(pdfUrl) {
+  //   const viewerUrl = `https://docs.google.com/gview?url=${encodeURIComponent(
+  //     pdfUrl
+  //   )}&embedded=true`;
+  //   pdfViewer.src = viewerUrl;
+  //   pdfViewer.style.display = "block";
+  // }
 
   function playSong(url) {
     audioPlayer.src = url;
